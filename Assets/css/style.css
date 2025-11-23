@@ -1,13 +1,19 @@
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    font-family: Arial, sans-serif;
+
+    background-image: url("Assets/lofi_illustrations_freepik.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
+
 
 header {
     text-align: center;
     padding: 2rem;
-    background-color: #282c34;
     color: white;
 }
 
