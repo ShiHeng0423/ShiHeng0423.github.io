@@ -3,124 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <!-- Try with lowercase 'assets' if your folder is lowercase -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Shi Heng - Game Developer</title>
+    <link rel="stylesheet" href="Assets/css/style.css">
 </head>
 <body>
+
+    <!-- Header -->
     <header>
         <h1>Hi, I'm Shi Heng</h1>
         <p>Game Developer</p>
+
         <nav>
-            <a href="#projects">Projects</a>
+            <a href="index.html" class="active">Home</a>
+            <a href="highlights.html">Highlights</a>
+            <a href="about.html">About</a>
+            <a href="museum.html">Full Projects</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
-    <section id="projects">
-        <h2>My Projects During University as a Interactive Media Game Design (IMGD) student</h2>
-        <div class="project-list">
-            <div class="project">
-                <a href="projects/project1/index.html">
-                    <img src="projects/project1/Screenshot1.png" alt="Project Screenshot">
-                    <h3>Unity Project at USA summer class (Solo)</h3>
-                </a>
-                <p>2D single player, top down procedurally generated level</p>
-            </div>
-            <div class="project">
-                <a href="projects/project2/index.html">
-                    <img src="projects/project2/Screenshot1.png" alt="Project Screenshot">
-                    <h3>Unreal Project at USA summer class (Solo)</h3>
-                </a>
-                <p>Handcrafted 3D level using first person character controller with minimal mechanics</p>
-            </div>
-            <div class="project">
-                <a href="projects/project3/index.html">
-                    <img src="projects/project3/Screenshot2.png" alt="Project Screenshot">
-                    <h3>Unity Project at USA summer class (Groupwork)</h3>
-                </a>
-                <p>Exploring adaptive Enemy Behaviors through AI communication</p>
-            </div>
-            <div class="project">
-                <a href="projects/project4/index.html">
-                    <img src="projects/project4/Screenshot1.png" alt="Project Screenshot">
-                    <h3>GAM 200 & 250</h3>
-                </a>
-                <p>A fast-paced 2.5D top-down "Grab & Shoot" arena shooter where enemies double as projectiles—vacuum them, launch them, and survive against the clock.</p>
-            </div>
-            <div class="project">
-                <a href="projects/project5/index.html">
-                    <img src="projects/project5/Screenshot1.png" alt="Project Screenshot">
-                    <h3>Software Engineering Project 2</h3>
-                </a>
-                <p>A side-scrolling Metroidvania action-adventure where you explore dynamic dungeons, battle challenging enemies, and unlock powerful abilities in a richly interactive world.</p>
-            </div>
-            <div class="project">
-                <a href="projects/project6/index.html">
-                    <img src="projects/project6/Screenshot2.png" alt="Project Screenshot">
-                    <h3>Software Engineering Project 1</h3>
-                </a>
-                <p>Defend the space base as a customizable spaceship! Survive as long as you can while battling multiple enemy types and bosses.</p>
-            </div>
-        </div>
 
-        <h2>My Projects During Polytechnic as a Game Development Technology (GDT) student</h2>
-        <div class="project-list">
-            <div class="project">
-                <a href="projects/project7/index.html">
-                    <img src="projects/project7/Screenshot3.png" alt="Project 1 Screenshot">
-                    <h3>FYP</h3>
-                </a>
-                <p>A dual-role FYP involving final refinements for a client's game project and early development of a new Unity game IP.</p>
-            </div>
-            <div class="project">
-                <a href="projects/project8/index.html">
-                    <img src="projects/project8/screenshot.png" alt="Project 2 Screenshot">
-                    <h3>Internship @ TinkerTanker</h3>
-                </a>
-                <p>Created Unity-based educational projects integrating micro:bit hardware, developed sample teaching materials, and contributed to interactive classroom resources.</p>
-            </div>
-            <div class="project">
-                <a href="projects/project9/index.html">
-                    <img src="projects/project9/screenshot.png" alt="Project 2 Screenshot">
-                    <h3>IWP</h3>
-                </a>
-                <p></p>
-            </div>
-            <div class="project">
-                <a href="projects/project10/index.html">
-                    <img src="projects/project10/screenshot.png" alt="Project 2 Screenshot">
-                    <h3>Studio Project 4</h3>
-                </a>
-                <p>A cooperative 2D puzzle-shooter combining teamwork-based mechanics, enemy encounters, and multi-path level design.</p>
-            </div>
-            <div class="project">
-                <a href="projects/project11/index.html">
-                    <img src="projects/project11/screenshot.png" alt="Project 2 Screenshot">
-                    <h3>SP 3</h3>
-                </a>
-                <p>Short description of Project 2</p>
-            </div>
-            <div class="project">
-                <a href="projects/project12/index.html">
-                    <h3>Studio Project 2 (Archived)</h3>
-                </a>
-                <p>This was an early 3D racing game project where we modeled our own cars and tracks in Maya. The original build and assets are no longer recoverable, so this project is archived.</p>
-            </div>
-            <div class="project">
-                <a href="projects/project13/index.html">
-                    <img src="projects/project13/screenshot.png" alt="Project 2 Screenshot">
-                    <h3>Studio Project 1</h3>
-                </a>
-                <p>A maze game powered by ASCII text-file layouts.</p>
+    <!-- Hero -->
+    <section id="hero">
+        <div class="hero-content">
+            <h2>Welcome to My Portfolio</h2>
+            <p>
+                I’m a passionate game developer with experience in Unity and Unreal Engine,
+                focusing on gameplay systems, AI, and interactive experiences.
+            </p>
+
+            <div class="cta-buttons">
+                <a href="highlights.html" class="btn-primary">View Highlights</a>
+                <a href="museum.html" class="btn-secondary">All Projects</a>
             </div>
         </div>
     </section>
 
+    <!-- Featured Projects -->
+    <section id="featured">
+        <h2>Featured Projects</h2>
+
+        <div class="project-list">
+
+            <div class="project-card">
+                <a href="Projects/Project4/index.html">
+                    <img src="Projects/Project4/Screenshot1.png" alt="GAM 200 & 250">
+                    <h3>GAM 200 & 250</h3>
+                </a>
+                <p>A fast-paced 2.5D top-down arena shooter with unique “Grab & Shoot” mechanics.</p>
+            </div>
+
+            <div class="project-card">
+                <a href="Projects/Project8/index.html">
+                    <img src="Projects/Project8/screenshot.png" alt="Internship">
+                    <h3>Internship @ TinkerTanker</h3>
+                </a>
+                <p>Unity-based educational experiences integrating micro:bit hardware.</p>
+            </div>
+
+            <div class="project-card">
+                <a href="Projects/Project9/index.html">
+                    <img src="Projects/Project9/screenshot.png" alt="Independent Work">
+                    <h3>Independent Work Project</h3>
+                </a>
+                <p>A Hero Is Born — fast-paced 2D action featuring three playable heroes.</p>
+            </div>
+
+            <div class="project-card">
+                <a href="Projects/Project10/index.html">
+                    <img src="Projects/Project10/screenshot.png" alt="Studio Project 4">
+                    <h3>Studio Project 4</h3>
+                </a>
+                <p>A cooperative 2D puzzle-shooter built around teamwork-based mechanics.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact -->
     <section id="contact">
         <h2>Contact Me</h2>
         <p>Email: <a href="mailto:tsheng23@gmail.com">tsheng23@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/teng-shi-heng/">linkedin.com/in/teng-shi-heng/</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/teng-shi-heng/">linkedin.com/in/teng-shi-heng</a></p>
         <p>GitHub: <a href="https://github.com/ShiHeng0423">github.com/ShiHeng0423</a></p>
     </section>
+
+    <footer>
+        <p>© 2025 Shi Heng — Game Developer Portfolio</p>
+    </footer>
+
 </body>
 </html>
