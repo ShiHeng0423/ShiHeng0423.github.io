@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Studio Project 1</title>
-    <link rel="stylesheet" href="../../Assets/css/style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Studio Project 1 — ASCII Maze Game</title>
+    <link rel="stylesheet" href="../../Assets/css/style.css" />
 </head>
 <body>
 
-    <!-- Shared Header / Navigation -->
+    <!-- Shared Header -->
     <header>
         <h1>Hi, I'm Shi Heng</h1>
         <p>Game Developer</p>
@@ -22,7 +23,7 @@
     </header>
 
     <!-- Project Content -->
-    <section id="project-studio1">
+    <section id="project-sp1">
         <div class="project-page" style="
             background:white;
             padding:2.5rem;
@@ -30,63 +31,61 @@
             box-shadow:0 2px 10px rgba(0,0,0,0.1);
         ">
 
-            <h2>Studio Project 1</h2>
+            <h2>Studio Project 1 — ASCII Maze Game</h2>
 
-            <!-- Screenshots -->
-            <div class="project-screenshots" style="display:flex; flex-wrap:wrap; gap:1rem; margin:1.5rem 0;">
-                <figure style="flex:1 1 280px; margin:0;">
-                    <img src="Screenshot1.png" alt="Unreal Project Screenshot 1" style="width:100%; border-radius:8px;" />
-                </figure>
-                <figure style="flex:1 1 280px; margin:0;">
-                    <img src="Screenshot2.png" alt="Unreal Project Screenshot 2" style="width:100%; border-radius:8px;" />
-                </figure>
-                <figure style="flex:1 1 280px; margin:0;">
-                    <img src="Screenshot3.png" alt="Unreal Project Screenshot 3" style="width:100%; border-radius:8px;" />
-                </figure>
-            </div>
+<div class="project-screenshots" style="
+    display: block !important;
+    margin: 1.5rem 0 2rem 0;
+">
+    <figure style="margin: 0 0 1.5rem 0 !important;">
+        <img src="Screenshot1.png" alt="Studio Project 1 Screenshot 1"
+            style="width:100% !important; max-width:100% !important; border-radius:8px; display:block;" />
+    </figure>
+    <figure style="margin: 0 0 2rem 0 !important;">
+        <img src="Screenshot2.png" alt="Studio Project 1 Screenshot 2"
+            style="width:100% !important; max-width:100% !important; border-radius:8px; display:block;" />
+    </figure>
+</div>
 
-            <!-- About the Game -->
-            <h3>About the Game</h3>
+            <!-- Overview -->
+            <h3>Overview</h3>
             <p>
-                Studio Project 1 is an ASCII-based maze game where the entire playable level is generated 
-                by reading characters directly from a text file. Each ASCII symbol corresponds to a tile, wall, 
-                or interactable object. This approach allowed rapid iteration, easy level editing, and a complete 
-                game built with zero art assets.
+                <strong>Studio Project 1</strong> is an ASCII-based maze game where the entire level layout is generated 
+                from a plain text file. Each character in the file represents walls, floor tiles, or other elements 
+                that form the maze environment.
             </p>
             <p>
-                The project introduced foundational concepts such as file parsing, grid systems, movement handling, 
-                and basic game loop structure—all implemented purely in C++.
+                This project focused on fundamentals such as file parsing, grid-based movement, and designing a fully 
+                playable game loop with no art assets — everything is built entirely from text.
             </p>
 
             <!-- Controls -->
             <h3>Controls</h3>
 
-            <h4>Menu</h4>
+            <h4>Menu Navigation</h4>
             <ul>
-                <li><strong>W / S</strong> – Move Up / Down</li>
-                <li><strong>Enter</strong> – Confirm</li>
+                <li><strong>W / S</strong> — Move Up / Down</li>
+                <li><strong>Enter</strong> — Confirm Selection</li>
             </ul>
 
             <h4>Gameplay</h4>
             <ul>
-                <li><strong>W / A / S / D</strong> – Move</li>
+                <li><strong>W / A / S / D</strong> — Move player</li>
             </ul>
 
-            <!-- Executable Link -->
+            <!-- Play / Download -->
             <h3>Play / Download</h3>
             <p>
                 <a class="project-button"
-                   href="INSERT_YOUR_CORRECT_EXECUTABLE_LINK_HERE"
+                   href="https://github.com/ShiHeng0423/Portfolio_GameExecutable/tree/ASCII_MazeGame"
                    target="_blank" rel="noopener noreferrer">
                     → View Game Executable
                 </a>
             </p>
 
-            <!-- Back to Museum -->
-            <p style="margin-top:2rem;">
-                <a class="project-button" href="../../museum.html">
-                    ← Back to Full Projects
-                </a>
+            <!-- Back Button -->
+            <p>
+                <a class="project-button" href="../../museum.html">← Back to Full Projects</a>
             </p>
 
         </div>
