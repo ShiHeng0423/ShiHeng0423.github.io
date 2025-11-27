@@ -504,6 +504,20 @@ section h2::after {
     margin-bottom: 0.5rem;
 }
 
+/* === Video styling for project pages === */
+.project-video {
+    margin: 1.5rem 0 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.project-video video {
+    width: 100%;
+    max-width: 900px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+}
+
 /* Contact Section (footer style) */
 #contact {
     background: #2d3748;
@@ -731,4 +745,44 @@ blockquote {
     .project-screenshots {
         flex-direction: column;
     }
+}
+
+
+/* Awards & Certifications */
+#awards {
+    max-width: 1200px;
+    margin: 0 auto 3rem;
+    padding: 0 2rem;
+}
+
+.awards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.award-card {
+    background: white;
+    padding: 1.75rem 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+.award-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.75rem;
+    color: #2d3748;
+}
+
+.award-card ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.award-card li {
+    margin-bottom: 0.75rem;
+    color: #4a5568;
+    line-height: 1.7;
 }

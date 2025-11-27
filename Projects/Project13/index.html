@@ -7,42 +7,94 @@
 </head>
 <body>
 
-    <div class="project-page">
-        <h1>Studio Project 1</h1>
+    <!-- Shared Header / Navigation -->
+    <header>
+        <h1>Hi, I'm Shi Heng</h1>
+        <p>Game Developer</p>
 
-        <!-- Screenshots -->
-        <img src="Screenshot1.png" alt="Project Screenshot 1">
-        <img src="Screenshot2.png" alt="Project Screenshot 2">
+        <nav>
+            <a href="../../index.html">Home</a>
+            <a href="../../about.html">About</a>
+            <a href="../../highlights.html">Highlights</a>
+            <a href="../../museum.html">Full Projects</a>
+            <a href="../../index.html#contact">Contact</a>
+        </nav>
+    </header>
 
-        <h2>About the Game</h2>
-        <p>
-            Studio Project 1 is an ASCII-based maze game where the entire maze layout is generated 
-            by reading characters from a text file. Each ASCII character represents a different tile 
-            or wall type, making the game highly flexible and easy to modify simply by editing a text file.  
-            This design allowed for rapid iteration and creative level building with zero art assets.
-        </p>
+    <!-- Project Content -->
+    <section id="project-studio1">
+        <div class="project-page" style="
+            background:white;
+            padding:2.5rem;
+            border-radius:10px;
+            box-shadow:0 2px 10px rgba(0,0,0,0.1);
+        ">
 
-        <h2>Controls</h2>
+            <h2>Studio Project 1</h2>
 
-        <h3>Menu</h3>
-        <ul>
-            <li><strong>W / S</strong> – Move Up / Down</li>
-            <li><strong>Enter</strong> – Confirm</li>
-        </ul>
+            <!-- Screenshots -->
+            <div class="project-screenshots" style="display:flex; flex-wrap:wrap; gap:1rem; margin:1.5rem 0;">
+                <figure style="flex:1 1 280px; margin:0;">
+                    <img src="Screenshot1.png" alt="Unreal Project Screenshot 1" style="width:100%; border-radius:8px;" />
+                </figure>
+                <figure style="flex:1 1 280px; margin:0;">
+                    <img src="Screenshot2.png" alt="Unreal Project Screenshot 2" style="width:100%; border-radius:8px;" />
+                </figure>
+                <figure style="flex:1 1 280px; margin:0;">
+                    <img src="Screenshot3.png" alt="Unreal Project Screenshot 3" style="width:100%; border-radius:8px;" />
+                </figure>
+            </div>
 
-        <h3>Gameplay</h3>
-        <ul>
-            <li><strong>W / A / S / D</strong> – Move</li>
-        </ul>
+            <!-- About the Game -->
+            <h3>About the Game</h3>
+            <p>
+                Studio Project 1 is an ASCII-based maze game where the entire playable level is generated 
+                by reading characters directly from a text file. Each ASCII symbol corresponds to a tile, wall, 
+                or interactable object. This approach allowed rapid iteration, easy level editing, and a complete 
+                game built with zero art assets.
+            </p>
+            <p>
+                The project introduced foundational concepts such as file parsing, grid systems, movement handling, 
+                and basic game loop structure—all implemented purely in C++.
+            </p>
 
-        <p>
-            <a href="https://github.com/ShiHeng0423/Portfolio_GameExecutable/tree/2DProceduralDungeon_Unity">
-                → Click to navigate to the Game Executable
-            </a>
-        </p>
+            <!-- Controls -->
+            <h3>Controls</h3>
 
-        <p><a href="../../index.html">← Back to Portfolio</a></p>
-    </div>
+            <h4>Menu</h4>
+            <ul>
+                <li><strong>W / S</strong> – Move Up / Down</li>
+                <li><strong>Enter</strong> – Confirm</li>
+            </ul>
+
+            <h4>Gameplay</h4>
+            <ul>
+                <li><strong>W / A / S / D</strong> – Move</li>
+            </ul>
+
+            <!-- Executable Link -->
+            <h3>Play / Download</h3>
+            <p>
+                <a class="project-button"
+                   href="INSERT_YOUR_CORRECT_EXECUTABLE_LINK_HERE"
+                   target="_blank" rel="noopener noreferrer">
+                    → View Game Executable
+                </a>
+            </p>
+
+            <!-- Back to Museum -->
+            <p style="margin-top:2rem;">
+                <a class="project-button" href="../../museum.html">
+                    ← Back to Full Projects
+                </a>
+            </p>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Shi Heng — Game Developer Portfolio</p>
+    </footer>
 
 </body>
 </html>
