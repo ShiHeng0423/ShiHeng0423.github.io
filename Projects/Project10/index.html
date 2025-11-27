@@ -1,70 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Studio Project 3</title>
-    <link rel="stylesheet" href="../../assets/css/style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Studio Project 4 — AzureVania</title>
+    <link rel="stylesheet" href="../../Assets/css/style.css" />
 </head>
 <body>
-    <div class="project-page">
-        <h1>Studio Project 3 — Road to Redemption</h1>
 
-        <img src="Screenshot1.png" alt="Project Screenshot 1">
-        <img src="Screenshot2.png" alt="Project Screenshot 2">
-        <img src="Screenshot3.png" alt="Project Screenshot 3">
+    <!-- Shared Header / Navigation -->
+    <header>
+        <h1>Hi, I'm Shi Heng</h1>
+        <p>Game Developer</p>
 
-        <h2>Overview</h2>
-        <p>
-            Road to Redemption is a 2D survival game inspired by <strong>Death’s Gambit</strong>. 
-            Players progress through procedurally generated levels, defeat enemies, collect upgrades, 
-            and race against time to clear the game as quickly as possible while achieving the highest score.
-        </p>
+        <nav>
+            <a href="../../index.html">Home</a>
+            <a href="../../highlights.html">Highlights</a>
+            <a href="../../about.html">About</a>
+            <a href="../../museum.html">Full Projects</a>
+            <a href="../../index.html#contact">Contact</a>
+        </nav>
+    </header>
 
-        <h2>Key Features</h2>
-        <ul>
-            <li>Randomly generated multi-room maps</li>
-            <li>Four enemy types with distinct AI behaviours</li>
-            <li>Variety of projectile attacks</li>
-            <li>Loot drops and upgrade system</li>
-            <li>Leaderboard with time-based scoring</li>
-            <li>Main Menu, Pause Menu, Win/Lose screens</li>
-            <li>Sound effects and background music</li>
-        </ul>
+    <!-- Project Content -->
+    <section id="project-sp4">
+        <div class="project-page" style="
+            background:white;
+            padding:2.5rem;
+            border-radius:10px;
+            box-shadow:0 2px 10px rgba(0,0,0,0.1);
+        ">
 
-        <h2>Controls</h2>
-        <ul>
-            <li><strong>A / D</strong> – Move Left & Right</li>
-            <li><strong>Space</strong> – Jump</li>
-            <li><strong>O</strong> – Open Doors</li>
-            <li><strong>E</strong> – Shoot Projectile</li>
-            <li><strong>I</strong> – Open Menu / Back</li>
-            <li><strong>Enter</strong> – Select</li>
-        </ul>
+            <h2>Studio Project 4 — AzureVania</h2>
 
-        <h2>Gameplay Systems</h2>
-        <ul>
-            <li><strong>Random Map Generator:</strong> Linked-list rooms with door-based progression</li>
-            <li><strong>Player Movement:</strong> Walking, sliding, crouching with tile-based collision</li>
-            <li><strong>Upgrades:</strong> Mini points → Large points for HP, damage, reload upgrades</li>
-            <li><strong>Loot Types:</strong> Damage boost, HP regen, upgrade point</li>
-            <li><strong>Projectiles:</strong> Fireball, Arrow, Bullet</li>
-            <li><strong>Map Editor:</strong> CSV maps with tile IDs, collision, and variants</li>
-        </ul>
+            <!-- Screenshots -->
+            <div class="project-screenshots" style="
+                display:flex;
+                flex-wrap:wrap;
+                gap:1rem;
+                margin:1.5rem 0;
+            ">
+                <figure style="flex:1 1 300px; margin:0;">
+                    <img src="Screenshot1.png" alt="AzureVania Screenshot 1" style="width:100%; border-radius:8px;" />
+                </figure>
+                <figure style="flex:1 1 300px; margin:0;">
+                    <img src="Screenshot2.png" alt="AzureVania Screenshot 2" style="width:100%; border-radius:8px;" />
+                </figure>
+                <figure style="flex:1 1 300px; margin:0;">
+                    <img src="Screenshot3.png" alt="AzureVania Screenshot 3" style="width:100%; border-radius:8px;" />
+                </figure>
+            </div>
 
-        <h2>My Contributions</h2>
-        <ul>
-            <li>Leaderboard system</li>
-            <li>Sound engine implementation</li>
-            <li>Random map generation</li>
-            <li>Linked-list room construction</li>
-            <li>Projectile collision (player & enemy)</li>
-            <li>Level & map design</li>
-            <li>Game objective setup</li>
-        </ul>
+            <!-- Game Overview -->
+            <h3>Game Overview</h3>
+            <p>
+                <strong>Road to Redemption</strong> is a 2D co-op puzzle–shooter inspired by
+                <strong>Fireboy and Watergirl</strong>, <strong>MapleStory</strong>, and <strong>Metal Slug</strong>.
+                The game blends cooperative puzzle solving with fast-paced side-scrolling action and interconnected
+                level design.
+            </p>
+            <p>
+                Two players must work together to trigger mechanisms, unlock new paths, and protect each other as they
+                fight enemies, gather loot, and acquire stronger weapons and armor. The core experience emphasizes
+                coordinated teamwork — <strong>“Stronger Together.”</strong>
+            </p>
 
-        <a href="https://github.com/ShiHeng0423/Portfolio_GameExecutable/tree/2DProceduralDungeon_Unity">Click to navigate to the Game Executable</a>
-        <br>
-        <a href="../../index.html">← Back to Portfolio</a>
-    </div>
+            <!-- How the Game is Played -->
+            <h3>How the Game is Played</h3>
+            <p>
+                Players start in a large map with a short tutorial introducing movement, shooting, and cooperative triggers.
+                Both players begin with an infinite-ammo pistol and must assist one another to access new areas and defeat
+                enemies.
+            </p>
+            <p>
+                Stronger weapons such as rifles and shotguns are unlocked by solving team-based puzzles and exploring
+                branching paths. NPCs provide hints across the world, while a shop NPC offers equipment and items that
+                significantly boost player stats. Portals act as travel points, sending players into or out of boss arenas.
+            </p>
+
+            <!-- Armor System -->
+            <h3>Armor System</h3>
+            <p>
+                Players can equip armor pieces found or purchased during the game. Wearing a full set of the same tier
+                grants a large bonus based on maximum HP.
+            </p>
+            <p><strong>Armor Tiers:</strong> Ancient &gt; Fight &gt; Jade &gt; Gold &gt; Leather</p>
+
+            <!-- Controls -->
+            <h3>Controls</h3>
+            <ul>
+                <li><strong>A / D</strong> – Move Left / Right</li>
+                <li><strong>Space</strong> – Jump</li>
+                <li><strong>Q</strong> – Open Armor Slots</li>
+                <li><strong>E</strong> – Open Inventory</li>
+                <li><strong>R</strong> – Reload</li>
+                <li><strong>O</strong> – Sound Menu</li>
+                <li><strong>F</strong> – Interact</li>
+                <li><strong>Left Click</strong> – Shoot</li>
+                <li><strong>Right Click</strong> – Switch Weapon</li>
+            </ul>
+
+            <!-- Contributions -->
+            <h3>My Contributions</h3>
+            <ul>
+                <li>Designed and implemented the Weapons & Bullet System.</li>
+                <li>Created particle effects for combat and feedback.</li>
+                <li>Implemented player controls, player info display, and sprite animation.</li>
+                <li>Built the HUD, including player HP, boss HP, weapon and ammo display.</li>
+                <li>Handled music and sound effects integration.</li>
+                <li>Developed the parallax background system.</li>
+                <li>Implemented a camera shake system for impact feedback.</li>
+                <li>Built NPC guide interactions and the portal system.</li>
+                <li>Implemented respawn logic for co-op gameplay.</li>
+                <li>Integrated networking from RakNet to Forge Networking.</li>
+            </ul>
+
+            <!-- Executable -->
+            <h3>Download / Play</h3>
+            <p>
+                <a href="https://github.com/ShiHeng0423/Portfolio_GameExecutable/tree/2DProceduralDungeon_Unity"
+                   target="_blank" rel="noopener noreferrer">
+                    → Click here to navigate to the Game Executable
+                </a>
+            </p>
+
+            <!-- Back -->
+            <p style="margin-top:2rem;">
+                <a href="../../museum.html">← Back to Full Projects</a>
+            </p>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Shi Heng — Game Developer Portfolio</p>
+    </footer>
+
 </body>
 </html>

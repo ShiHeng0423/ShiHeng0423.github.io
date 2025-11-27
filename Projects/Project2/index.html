@@ -1,30 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Unreal Project at USA Summer Class</title>
-    <link rel="stylesheet" href="../../assets/css/style.css">
+    <!-- Shared global stylesheet -->
+    <link rel="stylesheet" href="../../Assets/css/style.css" />
 </head>
 <body>
-    <div class="project-page">
-        <h1>Unreal Project at USA Summer Class</h1>
 
-        <img src="Screenshot1.png" alt="Project Screenshot 1">
-        <img src="Screenshot2.png" alt="Project Screenshot 2">
-        <img src="Screenshot3.png" alt="Project Screenshot 3">
+    <!-- Shared Header / Navigation -->
+    <header>
+        <h1>Hi, I'm Shi Heng</h1>
+        <p>Game Developer</p>
 
-        <h2>About the Game</h2>
-        <p>First-person single-player handcrafted 3D level.</p>
-        <p>Approximately 7–10 minutes per run.</p>
+        <nav>
+            <a href="../../index.html">Home</a>
+            <a href="../../highlights.html">Highlights</a>
+            <a href="../../about.html">About</a>
+            <a href="../../museum.html">Full Projects</a>
+            <a href="../../index.html#contact">Contact</a>
+        </nav>
+    </header>
 
-        <h2>Controls</h2>
-        <p><strong>Move:</strong> WASD</p>
-        <p><strong>Rotate:</strong> Mouse Movement</p>
-        <p><strong>Interact:</strong> F</p>
-        <p><strong>Note:</strong> Lower the game volume — sound effects may be loud.</p>
+    <!-- Project Content -->
+    <section id="project-unreal-usa">
+        <div class="project-page" style="
+            background: white;
+            padding: 2.5rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        ">
 
-        <a href="https://github.com/ShiHeng0423/Portfolio_GameExecutable/tree/2DProceduralDungeon_Unity"> Click to navigate to the Game Executable </a>
-        <a href="../../index.html">← Back to Portfolio</a>
-    </div>
+            <h2>Unreal Project – USA Summer Class</h2>
+
+            <!-- Screenshots -->
+            <div class="project-screenshots" style="display:flex; flex-wrap:wrap; gap:1rem; margin:1.5rem 0;">
+                <figure style="flex:1 1 280px; margin:0;">
+                    <img src="Screenshot1.png" alt="Unreal Project Screenshot 1" style="width:100%; border-radius:8px;" />
+                </figure>
+                <figure style="flex:1 1 280px; margin:0;">
+                    <img src="Screenshot2.png" alt="Unreal Project Screenshot 2" style="width:100%; border-radius:8px;" />
+                </figure>
+                <figure style="flex:1 1 280px; margin:0;">
+                    <img src="Screenshot3.png" alt="Unreal Project Screenshot 3" style="width:100%; border-radius:8px;" />
+                </figure>
+            </div>
+
+            <!-- About the Game -->
+            <h3>About the Game</h3>
+            <p>
+                This Unreal Engine project was developed during a USA summer class.
+                It features a handcrafted first-person 3D level with exploration-focused gameplay.
+            </p>
+            <ul>
+                <li>First-person, single-player experience</li>
+                <li>Designed as a 7–10 minute run</li>
+                <li>Fully handcrafted level layout</li>
+            </ul>
+
+            <!-- Controls -->
+            <h3>Controls</h3>
+            <ul>
+                <li><strong>Move:</strong> WASD</li>
+                <li><strong>Rotate:</strong> Mouse movement</li>
+                <li><strong>Interact:</strong> F</li>
+                <li><strong>Note:</strong> Game SFX may be loud — consider lowering volume</li>
+            </ul>
+
+            <!-- Link to build -->
+            <h3>Download / Play</h3>
+            <p>
+                <a href="https://github.com/ShiHeng0423/Portfolio_GameExecutable/tree/2DProceduralDungeon_Unity" target="_blank" rel="noopener noreferrer">
+                    → Navigate to the Game Executable
+                </a>
+            </p>
+
+            <!-- Back -->
+            <p style="margin-top: 2rem;">
+                <a href="../../museum.html">← Back to Full Projects</a>
+            </p>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Shi Heng — Game Developer Portfolio</p>
+    </footer>
+
 </body>
 </html>

@@ -1,51 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Software Engineering Project 1</title>
-    <link rel="stylesheet" href="../../assets/css/style.css">
+    <!-- Shared global stylesheet -->
+    <link rel="stylesheet" href="../../Assets/css/style.css" />
 </head>
 <body>
-    <div class="project-page">
-        <h1>Software Engineering Project 1</h1>
 
-        <img src="Screenshot1.png" alt="Project Screenshot 1">
-        <img src="Screenshot2.png" alt="Project Screenshot 2">
-        <img src="Screenshot3.png" alt="Project Screenshot 3">
+    <!-- Shared Header / Navigation -->
+    <header>
+        <h1>Hi, I'm Shi Heng</h1>
+        <p>Game Developer</p>
 
-        <h2>About the Game</h2>
-        <p><strong>Defend the space base</strong> as a customizable spaceship! Survive as long as you can while battling multiple enemy types and bosses.</p>
+        <nav>
+            <a href="../../index.html">Home</a>
+            <a href="../../highlights.html">Highlights</a>
+            <a href="../../about.html">About</a>
+            <a href="../../museum.html">Full Projects</a>
+            <a href="../../index.html#contact">Contact</a>
+        </nav>
+    </header>
 
-        <h2>Game Controls</h2>
-        <h3>Keyboard:</h3>
-        <ul>
-            <li><strong>WASD:</strong> Move spaceship</li>
-            <li><strong>Left / Right Arrow:</strong> Navigate through powerups</li>
-            <li><strong>Enter:</strong> Use selected powerup</li>
-            <li><strong>B:</strong> Enter shop when near the base</li>
-            <li><strong>Spacebar:</strong> Shoot</li>
-            <li><strong>ESC:</strong> Pause the game</li>
-        </ul>
+    <!-- Project Content -->
+    <section id="project-se1">
+        <div class="project-page" style="
+            background:white;
+            padding:2.5rem;
+            border-radius:10px;
+            box-shadow:0 2px 10px rgba(0,0,0,0.1);
+        ">
 
-        <h3>Mouse:</h3>
-        <ul>
-            <li>Click to interact in shop or menus</li>
-        </ul>
+            <h2>Software Engineering Project 1</h2>
 
-        <h2>Contributions</h2>
-        <ul>
-            <li>Implemented Weapons & Bullets (Basic & Special bullets, bullet sprites, sfx, collision behavior, weapon types)</li>
-            <li>Developed Sound Manager (Music, BGM & SFX settings)</li>
-            <li>Implemented Game Manager</li>
-            <li>Created 1-time use item logic and UI</li>
-            <li>Built Debugging features</li>
-            <li>Developed Sound Setting UI</li>
-        </ul>
+            <!-- Screenshots -->
+            <div class="project-screenshots" style="display:flex; flex-wrap:wrap; gap:1rem; margin:1.5rem 0;">
+                <figure style="flex:1 1 280px; margin:0;">
+                    <img src="Screenshot1.png" alt="SE Project 1 Screenshot 1" style="width:100%; border-radius:8px;" />
+                </figure>
+                <figure style="flex:1 1 280px; margin:0;">
+                    <img src="Screenshot2.png" alt="SE Project 1 Screenshot 2" style="width:100%; border-radius:8px;" />
+                </figure>
+                <figure style="flex:1 1 280px; margin:0;">
+                    <img src="Screenshot3.png" alt="SE Project 1 Screenshot 3" style="width:100%; border-radius:8px;" />
+                </figure>
+            </div>
 
-        <p>
-            <a href="https://github.com/ShiHeng0423/Portfolio_GameExecutable/tree/2DProceduralDungeon_Unity">Click to navigate to the Game Executable</a><br>
-            <a href="../../index.html">← Back to Portfolio</a>
-        </p>
-    </div>
+            <!-- About -->
+            <h3>About the Game</h3>
+            <p>
+                <strong>Defend the space base</strong> as a customizable spaceship!  
+                Survive for as long as possible while battling enemy waves and bosses.
+            </p>
+
+            <!-- Controls -->
+            <h3>Game Controls</h3>
+
+            <h4>Keyboard</h4>
+            <ul>
+                <li><strong>WASD:</strong> Move spaceship</li>
+                <li><strong>Left / Right Arrow:</strong> Switch powerups</li>
+                <li><strong>Enter:</strong> Use selected powerup</li>
+                <li><strong>B:</strong> Enter shop when near base</li>
+                <li><strong>Spacebar:</strong> Shoot</li>
+                <li><strong>ESC:</strong> Pause</li>
+            </ul>
+
+            <h4>Mouse</h4>
+            <ul>
+                <li>Click to interact with shop or menus</li>
+            </ul>
+
+            <!-- Contributions -->
+            <h3>My Contributions</h3>
+            <ul>
+                <li>Implemented all weapon and bullet systems (basic, special, SFX, collision behaviour, weapon types).</li>
+                <li>Developed the Sound Manager for BGM and SFX settings.</li>
+                <li>Implemented the overall Game Manager system.</li>
+                <li>Created logic and UI for one-time use items.</li>
+                <li>Built a set of debugging features for development and testing.</li>
+                <li>Developed full sound settings UI.</li>
+            </ul>
+
+            <!-- Executable -->
+            <h3>Download / Play</h3>
+            <p>
+                <a href="https://github.com/ShiHeng0423/Portfolio_GameExecutable/tree/2DProceduralDungeon_Unity"
+                   target="_blank" rel="noopener noreferrer">
+                    → Click here to navigate to the Game Executable
+                </a>
+            </p>
+
+            <!-- Back -->
+            <p style="margin-top:2rem;">
+                <a href="../../museum.html">← Back to Full Projects</a>
+            </p>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Shi Heng — Game Developer Portfolio</p>
+    </footer>
+
 </body>
 </html>

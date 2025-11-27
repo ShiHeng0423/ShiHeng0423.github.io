@@ -1,50 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>GAM 200 & 250 (Year 2 Project)</title>
-    <link rel="stylesheet" href="../../assets/css/style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GAM 200 & 250 – Year 2 Project</title>
+    <!-- Shared global stylesheet -->
+    <link rel="stylesheet" href="../../Assets/css/style.css" />
 </head>
 <body>
-    <div class="project-page">
-        <h1>GAM 200 & 250</h1>
 
-        <img src="Screenshot2.png" alt="Project Screenshot 1">
-        <img src="Screenshot1.png" alt="Project Screenshot 2">
-        <img src="Screenshot3.png" alt="Project Screenshot 3">
-        <img src="Screenshot4.png" alt="Project Screenshot 4">
+    <!-- Shared Header / Navigation -->
+    <header>
+        <h1>Hi, I'm Shi Heng</h1>
+        <p>Game Developer</p>
 
-        <h2>Game Concept</h2>
-        <p>A time-based <strong>Grab & Shoot</strong> shooter game where the player uses mass-based projectiles to defeat enemies while trapped in an enclosed arena. </p>
-        <p>These projectiles are the enemies themselves. Players must vacuum them using the <strong>GravGrab</strong> ability before firing them.</p>
-        <p>Heavier enemies are more difficult to vacuum and reduce shooting range, but they dealhigher damage or may trigger special effects—making them high-risk, high-reward choices.</p>
-        <p>Make strategic decisions, use the environment to your advantage, and survive until the timer ends.</p>
+        <nav>
+            <a href="../../index.html">Home</a>
+            <a href="../../highlights.html">Highlights</a>
+            <a href="../../about.html">About</a>
+            <a href="../../museum.html">Full Projects</a>
+            <a href="../../index.html#contact">Contact</a>
+        </nav>
+    </header>
 
-        <p><strong>Genre:</strong> Shooter • 2.5D • Top-Down</p>
+    <!-- Project Content -->
+    <section id="project-gam200">
+        <div class="project-page" style="
+            background: white;
+            padding: 2.5rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        ">
 
-        <h2>Controls</h2>
+            <h2>GAM 200 & 250 (Year 2 Project)</h2>
 
-        <h3>During Cutscenes</h3>
-        <p><strong>Left Ctrl:</strong> Skip cutscene</p>
+            <!-- Screenshots -->
+            <div class="project-screenshots" style="display:flex; flex-wrap:wrap; gap:1rem; margin:1.5rem 0;">
+                <figure style="flex:1 1 280px; margin:0;">
+                    <img src="Screenshot2.png" alt="Screenshot 1" style="width:100%; border-radius:8px;" />
+                </figure>
+                <figure style="flex:1 1 280px; margin:0;">
+                    <img src="Screenshot1.png" alt="Screenshot 2" style="width:100%; border-radius:8px;" />
+                </figure>
+                <figure style="flex:1 1 280px; margin:0;">
+                    <img src="Screenshot3.png" alt="Screenshot 3" style="width:100%; border-radius:8px;" />
+                </figure>
+                <figure style="flex:1 1 280px; margin:0;">
+                    <img src="Screenshot4.png" alt="Screenshot 4" style="width:100%; border-radius:8px;" />
+                </figure>
+            </div>
 
-        <h3>While In Game</h3>
-        <p><strong>W / A / S / D:</strong> Player & camera movement</p>
-        <p><strong>L:</strong> Toggle FPS display</p>
-        <p><strong>Tab:</strong> Toggle Hunt List</p>
-        <p><strong>Left Mouse (Hold):</strong> Drag enemy toward the player</p>
-        <p><strong>Right Mouse:</strong> Shoot captured enemy</p>
-        <p><strong>ESC:</strong> Pause / Unpause</p>
+            <!-- Game Concept -->
+            <h3>Game Concept</h3>
+            <p>
+                <strong>GAM 200 & 250</strong> is a fast-paced time-based shooter built around a unique
+                <strong>Grab & Shoot</strong> mechanic. Players use the <strong>GravGrab</strong> ability to vacuum enemies,
+                turning them into mass-based projectiles.
+            </p>
 
-        <h2>Contributions</h2>
-        <ul>
-            <li>Served as the Technical Lead for the project.</li>
-            <li>Developed rendering logic and implemented the animation workflow.</li>
-            <li>Diagnosed and resolved technical issues that teammates encountered.</li>
-            <li>Collaborated closely with designers to ensure smooth and stable technical integration.</li>
-        </ul>
+            <p>
+                Heavier enemies are harder to pull in and reduce your firing range — but they hit harder and may trigger
+                powerful special effects. This creates high-risk, high-reward decision-making in every encounter.
+            </p>
 
-        <a href="https://github.com/ShiHeng0423/Portfolio_GameExecutable/tree/2DProceduralDungeon_Unity">Click to navigate to the Game Executable</a>
-        <a href="../../index.html">← Back to Portfolio</a>
-    </div>
+            <p>
+                Survive waves of enemies, use environmental hazards to your advantage, and manage enemy mass strategically
+                until the round timer ends.
+            </p>
+
+            <p><strong>Genre:</strong> Shooter • 2.5D • Top-Down</p>
+
+            <!-- Controls -->
+            <h3>Controls</h3>
+
+            <h4>Cutscenes</h4>
+            <ul>
+                <li><strong>Left Ctrl:</strong> Skip cutscene</li>
+            </ul>
+
+            <h4>In-Game</h4>
+            <ul>
+                <li><strong>W / A / S / D:</strong> Player + camera movement</li>
+                <li><strong>L:</strong> Toggle FPS display</li>
+                <li><strong>Tab:</strong> Toggle Hunt List</li>
+                <li><strong>Left Mouse (Hold):</strong> Drag enemy toward player (GravGrab)</li>
+                <li><strong>Right Mouse:</strong> Shoot captured enemy</li>
+                <li><strong>ESC:</strong> Pause / Unpause</li>
+            </ul>
+
+            <!-- Contributions -->
+            <h3>My Contributions</h3>
+            <ul>
+                <li>Served as the <strong>Technical Lead</strong> for the team.</li>
+                <li>Developed the rendering pipeline and implemented the animation workflow.</li>
+                <li>Diagnosed and resolved technical issues colleagues encountered during development.</li>
+                <li>Collaborated closely with designers to ensure stable and coherent technical integration.</li>
+            </ul>
+
+            <!-- Link to Executable -->
+            <h3>Download / Play</h3>
+            <p>
+                <a href="https://github.com/ShiHeng0423/Portfolio_GameExecutable/tree/2DProceduralDungeon_Unity"
+                   target="_blank" rel="noopener noreferrer">
+                    → Navigate to the Game Executable
+                </a>
+            </p>
+
+            <!-- Back -->
+            <p style="margin-top:2rem;">
+                <a href="../../museum.html">← Back to Full Projects</a>
+            </p>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Shi Heng — Game Developer Portfolio</p>
+    </footer>
+
 </body>
 </html>

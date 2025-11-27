@@ -6,10 +6,18 @@
 }
 
 body {
+    /* 🔹 Site-wide background image */
+    background-image: url("../lofi_illustrations_freepik.jpg");
+    background-size: cover;           /* fill screen */
+    background-position: center;      /* center image */
+    background-attachment: fixed;     /* parallax-style effect */
+    background-repeat: no-repeat;     /* no tiling */
+
+    /* Existing styles */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     color: #333;
-    background-color: #f5f5f5;
+    background-color: #f5f5f5; /* fallback if image fails to load */
 }
 
 a {
@@ -93,6 +101,7 @@ section h2::after {
     text-align: center;
     padding: 4rem 2rem;
     margin-top: 0;
+    border-radius: 0 0 10px 10px;
 }
 
 .hero-content h2 {
@@ -567,6 +576,13 @@ blockquote {
     border-left: 4px solid #ffc107;
 }
 
+.text-contrast {
+    color: #ffffff !important;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.65);
+}
+
+
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .highlight-item {
@@ -606,5 +622,113 @@ blockquote {
     
     .btn-primary, .btn-secondary {
         width: 100%;
+    }
+}
+
+
+.project-button {
+    display: inline-block;
+    margin-top: 1.2rem;
+    padding: 0.75rem 1.4rem;
+    background: #4f46e5;          /* Indigo */
+    color: white;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.25s ease;
+}
+
+.project-button:hover {
+    background: #3730a3;          /* Darker indigo */
+    transform: translateY(-2px);
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 2.5rem;
+    font-size: 0.95rem;
+    color: #555;
+    text-decoration: none;
+    transition: 0.25s ease;
+}
+
+.back-link:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+/* === Project detail pages (used by all project-*.html) === */
+
+.project-page {
+    max-width: 1100px;
+    margin: 2.5rem auto 3rem;
+    background: #ffffff;
+    padding: 2.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Screenshot gallery on project pages */
+.project-screenshots {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 1.5rem 0 2rem;
+}
+
+.project-screenshots figure {
+    flex: 1 1 280px;
+    margin: 0;
+}
+
+.project-screenshots img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    object-fit: contain;   /* use 'cover' if you prefer cropped cards */
+}
+
+/* Headings & text inside project pages */
+.project-page h2 {
+    font-size: 1.8rem;
+    margin-bottom: 0.75rem;
+    color: #2d3748;
+}
+
+.project-page h3 {
+    font-size: 1.3rem;
+    margin-top: 1.8rem;
+    margin-bottom: 0.4rem;
+    color: #2d3748;
+}
+
+.project-page h4 {
+    font-size: 1.1rem;
+    margin-top: 1.2rem;
+    margin-bottom: 0.3rem;
+}
+
+.project-page p,
+.project-page li {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333333;
+}
+
+.project-page ul {
+    padding-left: 1.4rem;
+    margin: 0.4rem 0 1.2rem;
+}
+
+/* Mobile tweaks just for project pages */
+@media (max-width: 768px) {
+    .project-page {
+        padding: 1.75rem;
+        margin: 1.5rem 1rem 2rem;
+    }
+
+    .project-screenshots {
+        flex-direction: column;
     }
 }

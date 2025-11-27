@@ -1,57 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Software Engineering Project 2 (Year 1)</title>
-    <link rel="stylesheet" href="../../assets/css/style.css">
+    <!-- Shared global stylesheet -->
+    <link rel="stylesheet" href="../../Assets/css/style.css" />
 </head>
 <body>
-    <div class="project-page">
-        <h1>Software Engineering Project 2 (Year 1)</h1>
 
-        <img src="Screenshot3.png" alt="Project Screenshot 1">
-        <img src="Screenshot4.png" alt="Project Screenshot 2">
-        <img src="Screenshot5.png" alt="Project Screenshot 3">
-        <img src="Screenshot6.png" alt="Project Screenshot 4">
-        <img src="Screenshot2.png" alt="Project Screenshot 5">
+    <!-- Shared Header / Navigation -->
+    <header>
+        <h1>Hi, I'm Shi Heng</h1>
+        <p>Game Developer</p>
 
-        <h2>About the Game</h2>
-        <p><strong>MonstroStriko</strong> is a side-scrolling Metroidvania-style action-adventure game where players explore a dynamic dungeon filled with enemies, hazards, and secrets.</p>
-        <p>Players wield an intuitive weapon and combo system as they progress through interconnected levels, unlock new abilities, and overcome increasingly challenging foes. Each encounter—from minor creatures to formidable bosses—demands precision, timing, and adaptability.</p>
-        <p>The game features transitional animations, a climactic boss encounter, environmental interactions, and progression mechanics that reward exploration and skillful play.</p>
+        <nav>
+            <a href="../../index.html">Home</a>
+            <a href="../../highlights.html">Highlights</a>
+            <a href="../../about.html">About</a>
+            <a href="../../museum.html">Full Projects</a>
+            <a href="../../index.html#contact">Contact</a>
+        </nav>
+    </header>
 
-        <p><strong>Genre:</strong> Side-Scrolling • Action Adventure • Metroidvania</p>
+    <!-- Project Content -->
+    <section id="project-se2">
+        <div class="project-page" style="
+            background: white;
+            padding: 2.5rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        ">
 
-        <h2>Game Controls</h2>
-        <h3>Keyboard:</h3>
-        <ul>
-            <li><strong>A / D:</strong> Move Left & Right</li>
-            <li><strong>I:</strong> Interact with NPCs</li>
-            <li><strong>Space:</strong> Jump</li>
-            <li><strong>Tab:</strong> Open Inventory</li>
-            <li><strong>Esc:</strong> Pause Game</li>
-        </ul>
+            <h2>Software Engineering Project 2 (Year 1)</h2>
 
-        <h3>Mouse:</h3>
-        <ul>
-            <li><strong>Left Click:</strong> Equip / Select</li>
-        </ul>
+            <!-- Screenshots -->
+            <div class="project-screenshots" style="display:flex; flex-wrap:wrap; gap:1rem; margin:1.5rem 0;">
+                <figure style="flex:1 1 260px; margin:0;">
+                    <img src="Screenshot3.png" alt="MonstroStriko Screenshot 1" style="width:100%; border-radius:8px;" />
+                </figure>
+                <figure style="flex:1 1 260px; margin:0;">
+                    <img src="Screenshot4.png" alt="MonstroStriko Screenshot 2" style="width:100%; border-radius:8px;" />
+                </figure>
+                <figure style="flex:1 1 260px; margin:0;">
+                    <img src="Screenshot5.png" alt="MonstroStriko Screenshot 3" style="width:100%; border-radius:8px;" />
+                </figure>
+                <figure style="flex:1 1 260px; margin:0;">
+                    <img src="Screenshot6.png" alt="MonstroStriko Screenshot 4" style="width:100%; border-radius:8px;" />
+                </figure>
+                <figure style="flex:1 1 260px; margin:0;">
+                    <img src="Screenshot2.png" alt="MonstroStriko Screenshot 5" style="width:100%; border-radius:8px;" />
+                </figure>
+            </div>
 
-        <h2>Contributions</h2>
-        <ul>
-            <li>Implemented full player control system, including movement, combat, interaction, inventory, and crafting.</li>
-            <li>Developed the Audio Manager to handle game-wide SFX and music.</li>
-            <li>Built the camera system with follow behavior, screen shake, and cinematic effects.</li>
-            <li>Optimized and implemented collision logic for players, enemies, projectiles, bosses, NPCs, and interactables.</li>
-            <li>Designed and programmed all major UI components, including Main Menu, Inventory, Armor/Weapon UI, Pause Menu, and HUD elements.</li>
-            <li>Created Armor and Weapon systems with rarity, stats, set bonuses, and passives (e.g., Lifesteal).</li>
-            <li>Developed a modular Status Effect System with UI indicators.</li>
-            <li>Built extensive debugging tools such as teleport, invincibility, max attack, and god-mode save file.</li>
-            <li>Implemented the Game Manager to coordinate core systems and ensure a single persistent player instance.</li>
-        </ul>
+            <!-- About the Game -->
+            <h3>About the Game</h3>
+            <p>
+                <strong>MonstroStriko</strong> is a side-scrolling, Metroidvania-style action-adventure game where
+                players explore a dynamic dungeon filled with enemies, hazards, and secrets.
+            </p>
+            <p>
+                Players wield a responsive weapon and combo system while progressing through interconnected levels,
+                unlocking new abilities, and facing increasingly challenging foes. From minor creatures to major bosses,
+                encounters demand precision, timing, and adaptability.
+            </p>
+            <p>
+                The game features transitional animations, a climactic boss battle, environmental interactions, and
+                progression systems that reward exploration and skillful play.
+            </p>
+            <p><strong>Genre:</strong> Side-Scrolling • Action Adventure • Metroidvania</p>
 
-        <a href="https://github.com/ShiHeng0423/Portfolio_GameExecutable/tree/2DProceduralDungeon_Unity">Click to navigate to the Game Executable</a><br>
-        <a href="../../index.html">← Back to Portfolio</a>
-    </div>
+            <!-- Controls -->
+            <h3>Game Controls</h3>
+
+            <h4>Keyboard</h4>
+            <ul>
+                <li><strong>A / D:</strong> Move left & right</li>
+                <li><strong>I:</strong> Interact with NPCs</li>
+                <li><strong>Space:</strong> Jump</li>
+                <li><strong>Tab:</strong> Open inventory</li>
+                <li><strong>Esc:</strong> Pause game</li>
+            </ul>
+
+            <h4>Mouse</h4>
+            <ul>
+                <li><strong>Left Click:</strong> Equip / Select</li>
+            </ul>
+
+            <!-- Contributions -->
+            <h3>My Contributions</h3>
+            <ul>
+                <li>
+                    Implemented the full player control system:
+                    movement, combat, interaction, inventory, and crafting.
+                </li>
+                <li>
+                    Developed the Audio Manager to handle game-wide sound effects and music.
+                </li>
+                <li>
+                    Built the camera system, including follow behaviour, screen shake, and cinematic effects.
+                </li>
+                <li>
+                    Optimised and implemented collision logic for:
+                    players, enemies, projectiles, bosses, NPCs, and interactable objects.
+                </li>
+                <li>
+                    Designed and programmed major UI components:
+                    Main Menu, Inventory, Armor/Weapon UI, Pause Menu, and HUD elements.
+                </li>
+                <li>
+                    Created the Armor and Weapon systems with rarity, stats, set bonuses, and passives
+                    (e.g., Lifesteal).
+                </li>
+                <li>
+                    Developed a modular Status Effect System with in-game UI indicators.
+                </li>
+                <li>
+                    Built debugging tools such as teleport, invincibility, max attack,
+                    and a “god-mode” save file for faster iteration.
+                </li>
+                <li>
+                    Implemented the Game Manager to coordinate core systems and maintain a single
+                    persistent player instance.
+                </li>
+            </ul>
+
+            <!-- Link to Executable -->
+            <h3>Download / Play</h3>
+            <p>
+                <a href="https://github.com/ShiHeng0423/Portfolio_GameExecutable/tree/2DProceduralDungeon_Unity"
+                   target="_blank" rel="noopener noreferrer">
+                    → Click here to navigate to the Game Executable
+                </a>
+            </p>
+
+            <!-- Back -->
+            <p style="margin-top:2rem;">
+                <a href="../../museum.html">← Back to Full Projects</a>
+            </p>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Shi Heng — Game Developer Portfolio</p>
+    </footer>
+
 </body>
 </html>

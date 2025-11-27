@@ -1,30 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Unity Project at USA summer class</title>
-    <link rel="stylesheet" href="../../assets/css/style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unity Project – USA Summer Class</title>
+    <!-- Shared site-wide stylesheet (note: capital A in Assets) -->
+    <link rel="stylesheet" href="../../Assets/css/style.css" />
 </head>
 <body>
-    <div class="project-page">
-        <h1>Unity Project at USA summer class</h1>
-        <img src="Screenshot1.png" alt="Project Screenshot 1">
-        <img src="Screenshot2.png" alt="Project Screenshot 2">
-        
-        <h2>About the Game</h2>
-        <p>2D single player, top down procedurally generated level.</p>
-        <p>About 5 minutes long for a single run.</p>
-        
-        <h2>Controls</h2>
-        <p><strong>Move:</strong> WASD</p>
-        <p><strong>Aim / Rotate:</strong> Mouse Movement</p>
-        <p><strong>Shoot:</strong> Left Mouse Button</p>
-        <p><strong>F1:</strong> Restart the level</p>
-        <p><strong>F2:</strong> Zoom out to show whole level</p>
-        <p><strong>F3:</strong> Toggle "God Mode"</p>
 
-        <a href="https://github.com/ShiHeng0423/Portfolio_GameExecutable/tree/2DProceduralDungeon_Unity">Click to navigate to the Game Executable</a>
-        <a href="../../index.html">← Back to Portfolio</a>
-    </div>
+    <!-- Shared Header / Navigation -->
+    <header>
+        <h1>Hi, I'm Shi Heng</h1>
+        <p>Game Developer</p>
+
+        <nav>
+            <a href="../../index.html">Home</a>
+            <a href="../../highlights.html">Highlights</a>
+            <a href="../../about.html">About</a>
+            <a href="../../museum.html">Full Projects</a>
+            <a href="../../index.html#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Project Content -->
+    <section id="project-usa-summer">
+        <div class="project-page" style="
+            background: white;
+            padding: 2.5rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        ">
+            <h2>Unity Project at USA Summer Class</h2>
+
+            <!-- Screenshots -->
+            <div class="project-screenshots" style="
+                display:flex;
+                flex-direction:column;
+                gap:1.5rem;
+                margin:1.5rem 0;
+            ">
+                <figure style="margin:0;">
+                    <img src="Screenshot1.png" alt="Project Screenshot 1" style="width:100%; border-radius:8px;" />
+                </figure>
+                <figure style="margin:0;">
+                    <img src="Screenshot2.png" alt="Project Screenshot 2" style="width:100%; border-radius:8px;" />
+                </figure>
+            </div>
+
+
+            <!-- About the Game -->
+            <h3>About the Game</h3>
+            <p>
+                This is a 2D single-player, top-down action game built during a USA summer Unity class.
+                The game features a procedurally generated dungeon-style level with short, replayable runs.
+            </p>
+            <ul>
+                <li>Top-down 2D gameplay.</li>
+                <li>Procedurally generated level layout.</li>
+                <li>Designed for ~5 minute runs per playthrough.</li>
+            </ul>
+
+            <!-- Controls -->
+            <h3>Controls</h3>
+            <ul>
+                <li><strong>Move:</strong> WASD</li>
+                <li><strong>Aim / Rotate:</strong> Mouse movement</li>
+                <li><strong>Shoot:</strong> Left Mouse Button</li>
+                <li><strong>F1:</strong> Restart the level</li>
+                <li><strong>F2:</strong> Zoom out to show the whole level</li>
+                <li><strong>F3:</strong> Toggle "God Mode"</li>
+            </ul>
+
+<!-- Download Button -->
+<h3>Play / Download</h3>
+<p>
+    <a class="project-button"
+       href="https://github.com/ShiHeng0423/Portfolio_GameExecutable/tree/2DProceduralDungeon_Unity"
+       target="_blank" rel="noopener noreferrer">
+        → View Game Executable
+    </a>
+</p>
+
+<!-- Back to Museum -->
+<p>
+    <a class="back-link" href="../../museum.html">← Back to Full Projects</a>
+</p>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Shi Heng — Game Developer Portfolio</p>
+    </footer>
+
 </body>
 </html>
